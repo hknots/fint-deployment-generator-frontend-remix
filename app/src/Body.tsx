@@ -3,9 +3,10 @@ import EditWindow from "~/src/EditWindow";
 
 export default function Body() {
     return (
-        <div className="flex flex-row w-full h-full bg-amber-100">
-            <AsideFunctions/>
-            <EditWindow/>
+        <div className="flex w-full h-full">
+            <AsideFunctions />
+            <EditWindow />
         </div>
+
     );
 }
