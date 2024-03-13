@@ -4,7 +4,7 @@ import {Accordion, AccordionDetails, AccordionSummary} from "@mui/material";
 
 export default function MetaData() {
     return (
-        <div className="w-40">
+        <div className="col-span-4">
             <Accordion>
                 <AccordionSummary
                     aria-controls="panel1a-content"

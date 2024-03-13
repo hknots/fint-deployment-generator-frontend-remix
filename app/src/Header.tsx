@@ -12,7 +12,7 @@ export default function Header() {
     };
 
     return (
-        <div className="flex-shrink-0 pl-96 flex w-full h-header bg-amber-200">
+        <div className="flex-shrink-0 pl-96 flex w-full h-header bg-slate-500">
             <div className="m-auto flex items-center gap-4">
                 <Autocomplete
                     freeSolo
