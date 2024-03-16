@@ -25,10 +25,16 @@ export default function AsideFunctions() {
     }
 
     return (
-        <aside className="flex-shrink-0 grid grid-cols-2 auto-rows-max gap-2 p-2 w-96 bg-slate-500">
-            {Object.entries(buttonFields).map(([field, icon]) => (
-                <FunctionButton field={field} icon={icon}/>
-            ))}
+        <aside className="flex flex-shrink-0 justify-between flex-col h-full bg-slate-500 p-2">
+            <div className="grid grid-cols-2 auto-rows-max gap-2 w-96">
+                {Object.entries(buttonFields).map(([field, icon]) => (
+                    <FunctionButton field={field} icon={icon}/>
+                ))}
+            </div>
+            <div className="grid mt-8 grid-cols-2 w-full gap-2">
+                <FunctionButton field="Display"/>
+                <FunctionButton field="Download"/>
+            </div>
         </aside>
     )
 }
